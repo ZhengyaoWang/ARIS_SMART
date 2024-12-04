@@ -15,7 +15,7 @@ from Plot_Robot import PlotCanvas
 import Motor_Control
 
 ARM1_LENGTH = 120  # Constants for the robot's arms
-ARM2_LENGTH = 270
+ARM2_LENGTH = 220.75
 A1_WIDTH = 65
 
 class MainUI(QMainWindow):
@@ -328,7 +328,7 @@ class MainUI(QMainWindow):
 
     def inverseControl_goHome(self):
         self.ui.desired_x.setText("0")
-        self.ui.desired_y.setText("390")
+        self.ui.desired_y.setText("340.75")
         self.ui.desired_z_adjust.setValue(0)
         self.ui.desired_rotation.setText("0")
         self.inv_findAnglesNPlot()
